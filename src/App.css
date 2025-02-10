@@ -2,3 +2,8 @@
     transform: translate(-50%, -50%);
     background-color: #00000080;
 }
+
+.borderred {
+    border-bottom: 2px dashed red;
+    padding-bottom: 20px;
+}

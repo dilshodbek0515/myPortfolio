@@ -5,4 +5,8 @@
     font-family: monospace;
 }
 
+body {
+    background-color: black;
+}
+
 @import "tailwindcss";

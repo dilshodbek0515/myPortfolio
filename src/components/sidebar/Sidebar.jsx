@@ -15,7 +15,7 @@ import { BiSolidPhoneCall } from 'react-icons/bi'
 import { Drawer } from '@mui/material'
 const Sidebar = ({ open, toggleDrawer }) => {
   const DrawerList = (
-    <Box sx={{ width: 320 }} className='max-md:hidden'>
+    <Box sx={{ width: 320 }}>
       <div className='w-full h-screen bg-gray-700'>
         <img className='w-full h-96' src={user} alt='Dilshodbek Hasanov' />
         <h2
