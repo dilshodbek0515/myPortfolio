@@ -71,26 +71,32 @@ const Portfolio = () => {
         </div>
 
         <div
-          className='w-full grid grid-cols-3 gap-10'
+          className='w-full grid grid-cols-3 gap-10 max-lg:grid-cols-2 max-md:grid-cols-1'
           style={{ marginTop: '60px' }}
         >
           {projects.map(project => (
             <div
               key={project.id}
-              className='bg-gray-700 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 relative'
+              className='bg-gray-700 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300'
             >
-              <a href={project.link} className='w-full h-full'>
+              <a
+                href={project.link}
+                className='w-full h-full group relative block'
+              >
                 <img
                   src={project.img}
                   alt={project.title}
                   className='w-full h-full object-cover border-2 rounded-2xl'
                 />
+                <div className='absolute top-[100%] w-full h-20 bg-[#0000007e] transition-all duration-300 group-hover:top-52'>
+                  <h3
+                    className='text-lg font-semibold text-white'
+                    style={{ paddingLeft: '20px', paddingTop: '10px' }}
+                  >
+                    {project.title}
+                  </h3>
+                </div>
               </a>
-              <div className='p-4'>
-                <h3 className='text-lg font-semibold text-gray-900 absolute left-5 z-10 w-full h-10 opacity-70'>
-                  {project.title}
-                </h3>
-              </div>
             </div>
           ))}
         </div>
