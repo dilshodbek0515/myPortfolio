@@ -15,7 +15,7 @@ const Layout = () => {
         <Outlet />
       </main>
       <IoMenu
-        className='w-20 h-20 absolute top-2 right-2 text-black bg-blue-300 rounded-full'
+        className='w-20 h-20 fixed top-2 right-2 text-black bg-blue-300 rounded-full'
         style={{ padding: '20px' }}
         onClick={toggleDrawer(true)}
       />
