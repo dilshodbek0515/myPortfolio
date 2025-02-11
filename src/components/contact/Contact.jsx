@@ -1,12 +1,15 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 import { BiSolidPhoneCall } from 'react-icons/bi'
 import { FaFacebook, FaGithub, FaInstagram, FaTelegram } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { RiVercelFill } from 'react-icons/ri'
 const Contact = () => {
-  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const [bot, setBot] = useState({
     name: '',
     phone: '',

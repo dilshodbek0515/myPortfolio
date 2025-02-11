@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { IoPerson } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className='w-[95%] h-full' style={{ padding: '20px' }}>
       <div
@@ -36,7 +39,9 @@ const About = () => {
             </h3>
             <p className='text-white text-3xl font-bold flex items-center gap-5 max-sm:text-2xl'>
               Name:
-              <span className='text-2xl text-white max-sm:text-lg'>Dilshodbek Hasanov</span>
+              <span className='text-2xl text-white max-sm:text-lg'>
+                Dilshodbek Hasanov
+              </span>
             </p>
             <p className='text-white text-3xl font-bold flex items-center gap-5 max-sm:text-2xl'>
               Age:<span className='text-2xl text-white max-sm:text-lg'>18</span>
@@ -49,11 +54,15 @@ const About = () => {
             </p>
             <p className='text-white text-3xl font-bold flex items-center gap-5 max-sm:text-2xl'>
               Email:{' '}
-              <span className='text-2xl text-white max-sm:text-lg'>dilshodx516@gmail.com</span>
+              <span className='text-2xl text-white max-sm:text-lg'>
+                dilshodx516@gmail.com
+              </span>
             </p>
             <p className='text-white text-3xl font-bold flex items-center gap-5 max-sm:text-2xl'>
               Phone:
-              <span className='text-2xl text-white max-sm:text-lg'>+998 (97) 579 05 15</span>
+              <span className='text-2xl text-white max-sm:text-lg'>
+                +998 (97) 579 05 15
+              </span>
             </p>
             <Link to={'/resume'} className='w-full h-16 max-sm:w-[70%]'>
               <button className='w-full h-full text-red-600 text-2xl border-2 duration-300 border-red-600 rounded-2xl hover:bg-red-600 hover:text-white'>

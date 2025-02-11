@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { PiShoppingBagOpen } from 'react-icons/pi'
 import portfolio1 from '../../assets/images/p1.png'
 import portfolio2 from '../../assets/images/p2.png'
@@ -59,6 +59,9 @@ const projects = [
   }
 ]
 const Portfolio = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className='w-[95%] h-full' style={{ padding: '20px' }}>
       <div

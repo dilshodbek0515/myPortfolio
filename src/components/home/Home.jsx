@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img from '../../assets/images/bg.jpg'
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className='w-full h-screen relative'>
-      <img className='w-full h-screen bg-cover max-md:bg-conic' src={img} alt='bg' />
+      <img
+        className='w-full h-screen bg-cover max-md:bg-conic'
+        src={img}
+        alt='bg'
+      />
       <div
         className='w-full h-full absolute name flex items-center justify-center'
         style={{ left: '50%', top: '50%' }}
@@ -12,7 +19,9 @@ const Home = () => {
           <h2 className='text-8xl text-white font-bold max-xl:text-5xl max-sm:text-3xl'>
             Dilshodbek Hasanov
           </h2>
-          <p className='text-3xl text-white max-sm:text-2xl'>I am a Frontend Developer</p>
+          <p className='text-3xl text-white max-sm:text-2xl'>
+            I am a Frontend Developer
+          </p>
         </div>
       </div>
     </div>

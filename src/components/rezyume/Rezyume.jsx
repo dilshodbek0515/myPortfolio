@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaRegAddressCard } from 'react-icons/fa'
 
 const Rezyume = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className='w-[95%] h-full' style={{ padding: '20px' }}>
       <div

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaChalkboardTeacher } from 'react-icons/fa'
 import tech1 from '../../assets/images/teacher1.png'
 import tech2 from '../../assets/images/teacher2.png'
 import tech3 from '../../assets/images/teacher3.jpg'
 const Teachers = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className='w-[95%] h-full' style={{ padding: '20px' }}>
       <div
