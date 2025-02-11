@@ -1,10 +1,48 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useState } from 'react'
+import toast, { Toaster } from 'react-hot-toast'
 import { BiSolidPhoneCall } from 'react-icons/bi'
 import { FaFacebook, FaGithub, FaInstagram, FaTelegram } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { RiVercelFill } from 'react-icons/ri'
-
 const Contact = () => {
+  
+  const [bot, setBot] = useState({
+    name: '',
+    phone: '',
+    message: ''
+  })
+  const BOT_TOKEN = '7663778517:AAHLTijMCfFznDWG_1RuAK8YxoRBhYsWPe4'
+  const CHAT_ID = '6891591255'
+
+  const handleChange = e => {
+    setBot({ ...bot, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = async e => {
+    e.preventDefault()
+    const message = `
+    📨 New Message:
+      👤  Name: ${bot.name}
+      📞  Phone: ${bot.phone}
+      💬  Message: ${bot.message}
+    `
+
+    try {
+      await axios.post(`https://api.telegram.org/bot${BOT_TOKEN}/SendMessage`, {
+        chat_id: CHAT_ID,
+        text: message
+      })
+      toast.success('Malumotlar telegram botga yborildi'),
+        setBot({
+          name: '',
+          phone: '',
+          message: ''
+        })
+    } catch (error) {
+      toast.error('Malumotlar telegram botga yuborilmadi, qayta urinib ko‘ring')
+    }
+  }
   return (
     <div className='w-[95%] h-full' style={{ padding: '20px' }}>
       <div
@@ -16,6 +54,7 @@ const Contact = () => {
           <BiSolidPhoneCall className='text-7xl text-red-600 max-sm:text-4xl' />
         </div>
         <form
+          onSubmit={handleSubmit}
           className='w-full h-auto flex flex-col items-center gap-20'
           style={{ marginTop: '60px' }}
         >
@@ -26,18 +65,27 @@ const Contact = () => {
               placeholder='Name'
               type='text'
               required
+              onChange={handleChange}
+              name='name'
+              value={bot.name}
             />
             <input
               className='w-full h-20 border-2 border-white rounded-2xl outline-none text-white indent-3 text-2xl max-sm:text-sm'
               placeholder='Phone Number'
-              type='number'
+              type='text'
               required
+              onChange={handleChange}
+              name='phone'
+              value={bot.phone}
             />
           </div>
           <textarea
             className='w-full min-h-96 border-2 border-white rounded-2xl outline-none text-white text-2xl max-sm:text-sm'
             style={{ padding: '20px' }}
             placeholder='Please contact if you have any suggestions !!!'
+            onChange={handleChange}
+            name='message'
+            value={bot.message}
           ></textarea>
           <button className='w-[50%] h-24 border-2 duration-300 cursor-pointer border-white rounded-2xl text-white text-3xl hover:bg-white hover:text-black max-xl:w-full'>
             Send Message
@@ -92,6 +140,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
+      <Toaster position='top-center' reverseOrder={false} />
     </div>
   )
 }
