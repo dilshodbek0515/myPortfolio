@@ -18,7 +18,7 @@ const Rezyume = () => {
           style={{ marginTop: '100px' }}
         >
           <div
-            className='h-96 border-2 border-red-600 flex flex-col items-start justify-center gap-5 shadow-2xl bg-gray-900 rounded-2xl'
+            className='h-96 flex flex-col items-start justify-center gap-5 shadow-2xl bg-gray-900 rounded-2xl hover:scale-105 transition-transform duration-300'
             style={{ padding: '20px' }}
           >
             <p
@@ -34,7 +34,7 @@ const Rezyume = () => {
             <p className='text-xl text-white'>High school student</p>
           </div>
           <div
-            className='h-96 border-2 border-red-600 flex flex-col items-start justify-center gap-5 shadow-2xl bg-gray-900 rounded-2xl'
+            className='h-96 flex flex-col items-start justify-center gap-5 shadow-2xl bg-gray-900 rounded-2xl hover:scale-105 transition-transform duration-300'
             style={{ padding: '20px' }}
           >
             <p
@@ -52,7 +52,7 @@ const Rezyume = () => {
             <p className='text-xl text-white'>Frontend Developer</p>
           </div>
           <div
-            className='h-96 border-2 border-red-600 flex flex-col items-start justify-center gap-5 shadow-2xl bg-gray-900 rounded-2xl'
+            className='h-96 flex flex-col items-start justify-center gap-5 shadow-2xl bg-gray-900 rounded-2xl hover:scale-105 transition-transform duration-300'
             style={{ padding: '20px' }}
           >
             <p
@@ -68,7 +68,7 @@ const Rezyume = () => {
             <p className='text-xl text-white'>Frontend Developer</p>
           </div>
           <div
-            className='h-96 border-2 border-red-600 flex flex-col items-start justify-center gap-5 shadow-2xl bg-gray-900 rounded-2xl'
+            className='h-96 flex flex-col items-start justify-center gap-5 shadow-2xl bg-gray-900 rounded-2xl hover:scale-105 transition-transform duration-300'
             style={{ padding: '20px' }}
           >
             <p
@@ -85,7 +85,7 @@ const Rezyume = () => {
             <p className='text-xl text-white'>GIT HUB, MUI</p>
           </div>
           <div
-            className='h-96 border-2 border-red-600 flex flex-col items-start justify-center gap-5 shadow-2xl bg-gray-900 rounded-2xl'
+            className='h-96 flex flex-col items-start justify-center gap-5 shadow-2xl bg-gray-900 rounded-2xl hover:scale-105 transition-transform duration-300'
             style={{ padding: '20px' }}
           >
             <p
@@ -102,7 +102,7 @@ const Rezyume = () => {
             <p className='text-xl text-white'>ADAPTABILITY</p>
           </div>
           <div
-            className='h-96 border-2 border-red-600 flex flex-col items-start justify-start gap-5 shadow-2xl bg-gray-900 rounded-2xl'
+            className='h-96 flex flex-col items-start justify-start gap-5 shadow-2xl bg-gray-900 rounded-2xl hover:scale-105 transition-transform duration-300'
             style={{ padding: '20px' }}
           >
             <p
