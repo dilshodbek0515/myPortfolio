@@ -1,5 +1,8 @@
 import React from 'react'
 import { BiSolidPhoneCall } from 'react-icons/bi'
+import { FaFacebook, FaGithub, FaInstagram, FaTelegram } from 'react-icons/fa'
+import { MdEmail } from 'react-icons/md'
+import { RiVercelFill } from 'react-icons/ri'
 
 const Contact = () => {
   return (
@@ -40,6 +43,54 @@ const Contact = () => {
             Send Message
           </button>
         </form>
+
+        <div
+          className='w-full h-auto grid grid-cols-3 gap-20 max-sm:grid-cols-2'
+          style={{ marginBlock: '100px' }}
+        >
+          <a
+            href='https://t.me/dilshodbek0515'
+            className='flex flex-col items-center justify-center gap-5 h-auto text-white text-2xl'
+          >
+            <FaTelegram className='text-6xl' />
+            Telegram
+          </a>
+          <a
+            href='https://www.instagram.com/dilshodbek__0515__'
+            className='flex flex-col items-center justify-center gap-5 h-auto text-white text-2xl'
+          >
+            <FaInstagram className='text-6xl' />
+            Instagram
+          </a>
+          <a
+            href='https://www.facebook.com/profile.php?id=61565774353475'
+            className='flex flex-col items-center justify-center gap-5 h-auto text-white text-2xl'
+          >
+            <FaFacebook className='text-6xl' />
+            Facebook
+          </a>
+          <a
+            href='https://github.com/dilshodbek0515'
+            className='flex flex-col items-center justify-center gap-5 h-auto text-white text-2xl'
+          >
+            <FaGithub className='text-6xl' />
+            Git Hub
+          </a>
+          <a
+            href='mailto:dilshodx516@gmail.com'
+            className='flex flex-col items-center justify-center gap-5 h-auto text-white text-2xl'
+          >
+            <MdEmail className='text-6xl' />
+            Email
+          </a>
+          <a
+            href='https://vercel.com/dilshodbeks-projects-50922e37'
+            className='flex flex-col items-center justify-center gap-5 h-auto text-white text-2xl'
+          >
+            <RiVercelFill className='text-6xl' />
+            Vercel
+          </a>
+        </div>
       </div>
     </div>
   )

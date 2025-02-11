@@ -2,7 +2,7 @@ import React from 'react'
 import Box from '@mui/material/Box'
 import Divider from '@mui/material/Divider'
 // sidebar
-import user from '../../assets/images/user.webp'
+import user from '../../assets/images/user3.jpg'
 import { Link } from 'react-router-dom'
 import { IoHome } from 'react-icons/io5'
 import { MdTypeSpecimen } from 'react-icons/md'
@@ -17,7 +17,11 @@ const Sidebar = ({ open, toggleDrawer }) => {
   const DrawerList = (
     <Box sx={{ width: 320 }}>
       <div className='w-full h-screen bg-gray-700'>
-        <img className='w-full h-96' src={user} alt='Dilshodbek Hasanov' />
+        <img
+          className='w-full h-96 object-cover'
+          src={user}
+          alt='Dilshodbek Hasanov'
+        />
         <h2
           className='w-full text-2xl bg-blue-300 text-center font-bold'
           style={{ padding: '10px' }}
