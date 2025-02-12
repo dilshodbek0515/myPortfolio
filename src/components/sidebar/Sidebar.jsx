@@ -23,7 +23,7 @@ const Sidebar = ({ open, toggleDrawer }) => {
           alt='Dilshodbek Hasanov'
         />
         <h2
-          className='w-full text-2xl bg-blue-300 text-center font-bold'
+          className='w-full text-3xl bg-blue-300 text-center font-bold'
           style={{ padding: '10px' }}
         >
           Dilshodbek Hasanov
