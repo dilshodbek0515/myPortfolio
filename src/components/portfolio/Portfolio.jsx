@@ -42,7 +42,7 @@ const projects = [
   {
     id: 7,
     title: 'PORTFOLIO 2',
-    link: 'https://food-two-brown.vercel.app/login',
+    link: 'https://my-portfolio-orcin-eight-10.vercel.app/',
     img: portfolio7
   },
   {
@@ -54,7 +54,7 @@ const projects = [
   {
     id: 9,
     title: 'FOOD',
-    link: 'https://ishtixon-ttb-seven.vercel.app/',
+    link: 'https://food-two-brown.vercel.app/login',
     img: portfolio9
   }
 ]
