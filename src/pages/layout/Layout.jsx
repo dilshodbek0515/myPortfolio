@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 import Sidebar from '../../components/sidebar/Sidebar'
 import { IoMenu } from 'react-icons/io5'
 const Layout = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
 
   const toggleDrawer = newOpen => () => {
     setOpen(newOpen)

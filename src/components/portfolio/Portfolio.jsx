@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { PiShoppingBagOpen } from 'react-icons/pi'
-import portfolio1 from '../../assets/images/p1.png'
 import portfolio2 from '../../assets/images/p2.png'
 import portfolio3 from '../../assets/images/p3.png'
 import portfolio4 from '../../assets/images/p4.png'
@@ -8,13 +7,8 @@ import portfolio5 from '../../assets/images/p5.png'
 import portfolio6 from '../../assets/images/p6.png'
 import portfolio7 from '../../assets/images/p7.png'
 import portfolio8 from '../../assets/images/p8.png'
+import portfolio9 from '../../assets/images/p9.png'
 const projects = [
-  {
-    id: 1,
-    title: 'NORALIGHT',
-    link: 'https://react-n8.vercel.app',
-    img: portfolio1
-  },
   {
     id: 2,
     title: 'CINEMA',
@@ -48,7 +42,7 @@ const projects = [
   {
     id: 7,
     title: 'PORTFOLIO 2',
-    link: 'https://my-portfolio-orcin-eight-10.vercel.app',
+    link: 'https://food-two-brown.vercel.app/login',
     img: portfolio7
   },
   {
@@ -56,6 +50,12 @@ const projects = [
     title: 'TTB',
     link: 'https://ishtixon-ttb-seven.vercel.app/',
     img: portfolio8
+  },
+  {
+    id: 9,
+    title: 'FOOD',
+    link: 'https://ishtixon-ttb-seven.vercel.app/',
+    img: portfolio9
   }
 ]
 const Portfolio = () => {
