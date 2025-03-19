@@ -10,7 +10,7 @@ import Contact from '../pages/contact_page/Contact_page'
 import Error from '../pages/error/Error_page'
 const Router = () => {
   return (
-    <div>
+    <>
       {useRoutes([
         {
           path: '/',
@@ -47,7 +47,7 @@ const Router = () => {
           element: <Error />
         }
       ])}
-    </div>
+    </>
   )
 }
 
